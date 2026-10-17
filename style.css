@@ -1,0 +1,173 @@
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 15px;
+    color: #222222;
+    background-color: #f4f7fb;
+
+    /* Background image using a gradient */
+    background-image: linear-gradient(
+        to bottom,
+        #f4f7fb,
+        #e5eef9
+    );
+}
+
+/* Group Selector */
+h1, h2, h3 {
+    color: #164e8a;
+}
+
+/* ID Selector */
+#home {
+    padding: 20px;
+    border: 2px solid #164e8a;
+}
+
+/* Class Selector */
+.highlight {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* Descendant Selector */
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 4px;
+}
+
+/* Link styling */
+a {
+    color: #075caa;
+}
+
+a:hover {
+    color: #c0392b;
+}
+
+/* Profile image container */
+.profile-container {
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+/* Profile image */
+.profile-photo {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    border: 3px solid #164e8a;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Sections */
+section {
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+/* Article cards */
+.card {
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #b5c9df;
+    background-color: #edf4fc;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #164e8a;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #999999;
+}
+
+/* Aside */
+aside {
+    padding: 10px;
+    background-color: #e8f1ff;
+    border-left: 4px solid #164e8a;
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #164e8a;
+}
+
+/* Absolute units: cm, mm, in, pt, px */
+footer p {
+    font-size: 12pt;
+}
+
+/* RGB colour model */
+#about {
+    border-color: rgb(22, 78, 138);
+}
+
+/* HEX colour model and alpha channel */
+#projects {
+    background-color: #eaf2ff;
+    border-color: rgba(22, 78, 138, 0.5);
+}
+
+/* Width and height properties */
+#css-demo {
+    width: 100%;
+    min-height: 100px;
+}
+
+/* Visibility property */
+.visibility-demo {
+    visibility: visible;
+}
+
+/* Nested list */
+li li {
+    color: #444444;
+}
+
+/* Basic layout for smaller screens */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+}
